@@ -13,6 +13,9 @@
 		4D4EF9BC1F74B72B005DCE5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4EF9BB1F74B72B005DCE5C /* Assets.xcassets */; };
 		4D4EF9BF1F74B72B005DCE5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4EF9BD1F74B72B005DCE5C /* LaunchScreen.storyboard */; };
 		4D4EF9C21F74B72B005DCE5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EF9C11F74B72B005DCE5C /* main.m */; };
+		4D4EF9CB1F74F99E005DCE5C /* HZBNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EF9CA1F74F99E005DCE5C /* HZBNetworkUtil.m */; };
+		4D4EF9CE1F74FD37005DCE5C /* HZBNetWorkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EF9CD1F74FD37005DCE5C /* HZBNetWorkReachability.m */; };
+		4D6FF2D51F788CF3006B8257 /* HZBNetWorkStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FF2D41F788CF3006B8257 /* HZBNetWorkStatusModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		4D4EF9BE1F74B72B005DCE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D4EF9C01F74B72B005DCE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D4EF9C11F74B72B005DCE5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D4EF9C91F74F99E005DCE5C /* HZBNetworkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZBNetworkUtil.h; sourceTree = "<group>"; };
+		4D4EF9CA1F74F99E005DCE5C /* HZBNetworkUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZBNetworkUtil.m; sourceTree = "<group>"; };
+		4D4EF9CC1F74FD37005DCE5C /* HZBNetWorkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZBNetWorkReachability.h; sourceTree = "<group>"; };
+		4D4EF9CD1F74FD37005DCE5C /* HZBNetWorkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZBNetWorkReachability.m; sourceTree = "<group>"; };
+		4D6FF2D31F788CF3006B8257 /* HZBNetWorkStatusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZBNetWorkStatusModel.h; sourceTree = "<group>"; };
+		4D6FF2D41F788CF3006B8257 /* HZBNetWorkStatusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZBNetWorkStatusModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 		4D4EF9B11F74B72B005DCE5C /* XTNetworkType */ = {
 			isa = PBXGroup;
 			children = (
+				4D4EF9C81F74F956005DCE5C /* NetWork */,
 				4D4EF9B21F74B72B005DCE5C /* AppDelegate.h */,
 				4D4EF9B31F74B72B005DCE5C /* AppDelegate.m */,
 				4D4EF9B51F74B72B005DCE5C /* ViewController.h */,
@@ -69,6 +79,19 @@
 				4D4EF9C11F74B72B005DCE5C /* main.m */,
 			);
 			path = XTNetworkType;
+			sourceTree = "<group>";
+		};
+		4D4EF9C81F74F956005DCE5C /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				4D4EF9CC1F74FD37005DCE5C /* HZBNetWorkReachability.h */,
+				4D4EF9CD1F74FD37005DCE5C /* HZBNetWorkReachability.m */,
+				4D4EF9C91F74F99E005DCE5C /* HZBNetworkUtil.h */,
+				4D4EF9CA1F74F99E005DCE5C /* HZBNetworkUtil.m */,
+				4D6FF2D31F788CF3006B8257 /* HZBNetWorkStatusModel.h */,
+				4D6FF2D41F788CF3006B8257 /* HZBNetWorkStatusModel.m */,
+			);
+			path = NetWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D4EF9CE1F74FD37005DCE5C /* HZBNetWorkReachability.m in Sources */,
 				4D4EF9B71F74B72B005DCE5C /* ViewController.m in Sources */,
 				4D4EF9C21F74B72B005DCE5C /* main.m in Sources */,
 				4D4EF9B41F74B72B005DCE5C /* AppDelegate.m in Sources */,
+				4D4EF9CB1F74F99E005DCE5C /* HZBNetworkUtil.m in Sources */,
+				4D6FF2D51F788CF3006B8257 /* HZBNetWorkStatusModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8429SBRZW5;
 				INFOPLIST_FILE = XTNetworkType/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anning.XTNetworkType;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8429SBRZW5;
 				INFOPLIST_FILE = XTNetworkType/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = anning.XTNetworkType;
 				PRODUCT_NAME = "$(TARGET_NAME)";
