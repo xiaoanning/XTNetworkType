@@ -16,6 +16,7 @@
 		4D4EF9CB1F74F99E005DCE5C /* HZBNetworkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EF9CA1F74F99E005DCE5C /* HZBNetworkUtil.m */; };
 		4D4EF9CE1F74FD37005DCE5C /* HZBNetWorkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EF9CD1F74FD37005DCE5C /* HZBNetWorkReachability.m */; };
 		4D6FF2D51F788CF3006B8257 /* HZBNetWorkStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FF2D41F788CF3006B8257 /* HZBNetWorkStatusModel.m */; };
+		4D70F27C1FB052FD00B89E0D /* HZBNetworkFromStatusBarUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D70F27B1FB052FD00B89E0D /* HZBNetworkFromStatusBarUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		4D4EF9CD1F74FD37005DCE5C /* HZBNetWorkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZBNetWorkReachability.m; sourceTree = "<group>"; };
 		4D6FF2D31F788CF3006B8257 /* HZBNetWorkStatusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZBNetWorkStatusModel.h; sourceTree = "<group>"; };
 		4D6FF2D41F788CF3006B8257 /* HZBNetWorkStatusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZBNetWorkStatusModel.m; sourceTree = "<group>"; };
+		4D70F27A1FB052FD00B89E0D /* HZBNetworkFromStatusBarUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZBNetworkFromStatusBarUtil.h; sourceTree = "<group>"; };
+		4D70F27B1FB052FD00B89E0D /* HZBNetworkFromStatusBarUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZBNetworkFromStatusBarUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				4D4EF9CA1F74F99E005DCE5C /* HZBNetworkUtil.m */,
 				4D6FF2D31F788CF3006B8257 /* HZBNetWorkStatusModel.h */,
 				4D6FF2D41F788CF3006B8257 /* HZBNetWorkStatusModel.m */,
+				4D70F27A1FB052FD00B89E0D /* HZBNetworkFromStatusBarUtil.h */,
+				4D70F27B1FB052FD00B89E0D /* HZBNetworkFromStatusBarUtil.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			files = (
 				4D4EF9CE1F74FD37005DCE5C /* HZBNetWorkReachability.m in Sources */,
 				4D4EF9B71F74B72B005DCE5C /* ViewController.m in Sources */,
+				4D70F27C1FB052FD00B89E0D /* HZBNetworkFromStatusBarUtil.m in Sources */,
 				4D4EF9C21F74B72B005DCE5C /* main.m in Sources */,
 				4D4EF9B41F74B72B005DCE5C /* AppDelegate.m in Sources */,
 				4D4EF9CB1F74F99E005DCE5C /* HZBNetworkUtil.m in Sources */,

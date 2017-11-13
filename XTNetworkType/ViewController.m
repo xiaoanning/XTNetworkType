@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import <CoreTelephony/CTCarrier.h>
+#import "HZBNetworkFromStatusBarUtil.h"
+#import "HZBNetworkUtil.h"
 
 
 @interface ViewController ()
@@ -26,11 +28,16 @@
 {
     [super viewDidLoad];
 
+    [HZBNetworkUtil startObserveNetworkWithChangeCallback:^(HZBNetWorkStatusModel *netWorkStatusModel) {
+        
+    }];
     tipsLabel = [[UILabel alloc]initWithFrame:self.view.bounds];
     tipsLabel.numberOfLines = 0 ;
     [self.view addSubview:tipsLabel];
     
-    NSString * str = [self getNetworkType ];
+//    NSString * str = [self getNetworkType ];
+//    NSString * str = [HZBNetworkFromStatusBarUtil getNetworkType];
+    NSString * str = [[HZBNetworkUtil currentReachabilityStatus] netWorkStatusStr];
     
     tipsLabel.text = [NSString stringWithFormat:@"%@\n%@",tipsLabel.text,str];
     NSLog(@"%@",str);
